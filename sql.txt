@@ -1,0 +1,30 @@
+/*
+SQLyog Community v13.1.6 (64 bit)
+MySQL - 10.4.14-MariaDB : Database - node20_mysql
+*********************************************************************
+*/
+
+
+CREATE DATABASE /*!32312 IF NOT EXISTS*/`node20_mysql` /*!40100 DEFAULT CHARACTER SET utf8mb4 */;
+
+USE `node20_mysql`;
+
+
+
+DROP TABLE IF EXISTS `customers`;
+
+CREATE TABLE `customers` (
+  `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(100) NOT NULL,
+  `city` VARCHAR(100) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=INNODB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4;
+
+
+
+INSERT  INTO `customers`(`id`,`name`,`city`) VALUES 
+(2,'juan','chicago'),
+(3,'pedro','medellin'),
+(4,'maxi','barcelona'),
+(5,'alberto','buenos aires');
+
